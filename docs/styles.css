@@ -1,0 +1,89 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation Menu */
+  nav {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #3f51b5;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card Component (for trading data, charts, etc.) */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Trading Info Section */
+  .trade-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .trade-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .trade-info .price {
+    font-size: 1.5rem;
+    color: #27ae60;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .trade-info {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
